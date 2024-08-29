@@ -1,0 +1,114 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url('C:\Users\jeevan\tic-tac-toe\public\new.jpg'); /* Make sure the image path is correct */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Align the background image to the left side */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed;
+  background-size: 100%; /* Keep the background fixed during scrolling */
+  display: flex;
+  left: 20%;
+  right: 50%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background for the game board */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  background: #07933d;
+  border: 5px solid #282c34;
+  font-size: 48px;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.square:hover {
+  background: #de5f0a;
+}
+
+.square:active {
+  background: #1b90e4;
+}
+
+.square:nth-child(3n) {
+  border-right: none;
+}
+
+.board-row:last-child .square {
+  border-bottom: none;
+}
+
+.restart-button {
+  color: #de5f0a;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #e5d2d278;
+  background-color: hsl(355, 60%, 4%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.restart-button:hover {
+  background-color: #21a1f1;
+}
+
+.restart-button:active {
+  background-color: #1b90e4;
+}
+.result-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+
+.result-page h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.restart-link {
+  font-size: 24px;
+  color: #61dafb;
+  text-decoration: none;
+  border: 2px solid #61dafb;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.restart-link:hover {
+  background-color: #61dafb;
+  color: #fff;
+}
